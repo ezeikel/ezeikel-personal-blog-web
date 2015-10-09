@@ -1,10 +1,22 @@
 <header class='main-header'>
-  <div class="container">
-    <div class="row">
-      <section class="columns twelve">
+  <div>
+    <div>
+      <section>
         <h1 class="name">Ezeikel Pemberton</h1>
         <h3 class="subtitle">Web Developer</h3>
       </section>
+      <nav class="navbar" role="navigation">
+        <ul class="nav">
+          {% for page in site.pages %}
+
+            {% if page.title %}
+            <li class="nav-item">
+              <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
   </div>
 </header>

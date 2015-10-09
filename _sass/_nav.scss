@@ -1,0 +1,13 @@
+nav.navbar {
+  ul.nav {
+    li.nav-item {
+      display: inline;
+      + li.nav-item {
+        margin-left: 10px;
+      }
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
