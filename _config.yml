@@ -5,6 +5,7 @@ description: The best Web Developer in the world!
 url: "http://ezeikel.co.uk" # the base hostname & protocol for your site
 twitter_username: ezeikel_
 github_username:  ezeikel_
+paginate: 3
 
 # Build settings
 markdown: kramdown
@@ -19,6 +20,7 @@ defaults:
       author: Ezeikel Pemberton
       layout: "post"
       category: web
+      comments: true
   -
     scope:
       path: "" # an empty string here means all files in the project
