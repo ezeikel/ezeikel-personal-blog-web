@@ -9,11 +9,11 @@ layout: default
       <figure class="post-preview">
         <img src="https://placehold.it/300x300" alt="" />
         <figcaption class="post-preview__overlay">
-          <h2 class="post-title">
+          <h2 class="grid-item__title">
             <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
-          <h4 class="post-author">{{ post.author }}</h4>
-          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h4 class="grid-item__first-line">{{ post.author }}</h4>
+          <span class="grid-item__second-line">{{ post.date | date: "%b %-d, %Y" }}</span>
         </figcaption>
       </figure>
     {% endfor %}
