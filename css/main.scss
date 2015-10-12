@@ -42,11 +42,10 @@ $on-laptop:        800px;
     }
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic);
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "normalize",
+        "fonts",
         "base",
         "layout",
         "syntax-highlighting",
