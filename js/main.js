@@ -1,6 +1,6 @@
-(function ($){
-  'use strict';
-  console.log('js loaded');
-  $('body').hide();
-
-})(jQuery);
+// $(".grid").masonry({
+//   // options...
+//   itemSelector: '.grid-item',
+//   columnWidth: 1,
+//   //percentPosition: true
+// });
