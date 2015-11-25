@@ -1,0 +1,35 @@
+{
+  "name": "ezeikel-blog",
+  "version": "1.0.0",
+  "description": "Jekyll Web Developer Portfolio/Blog",
+  "main": "index.js",
+  "dependencies": {
+    "inuit-functions": "^0.2.0",
+    "inuit-defaults": "^0.2.3",
+    "inuit-mixins": "^0.2.3",
+    "inuit-box-sizing": "^0.2.0",
+    "inuit-normalize": "^3.0.3",
+    "inuit-page": "^0.2.1"
+  },
+  "devDependencies": {
+    "inuit-box-sizing": "^0.2.0",
+    "inuit-defaults": "^0.2.3",
+    "inuit-functions": "^0.2.0",
+    "inuit-mixins": "^0.2.3",
+    "inuit-normalize": "^3.0.3",
+    "inuit-page": "^0.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezeikel/ezeikel-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezeikel/ezeikel-blog/issues"
+  },
+  "homepage": "https://github.com/ezeikel/ezeikel-blog#readme"
+}
