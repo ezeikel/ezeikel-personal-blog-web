@@ -13,6 +13,11 @@
 
 @import "../node_modules/inuit-page/base.page";
 
+//After starter kit
+@import "../node_modules/inuit-layout/objects.layout";
+@import "../node_modules/inuit-tools-widths/tools.widths";
+@import "../node_modules/inuit-widths/trumps.widths";
+
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;

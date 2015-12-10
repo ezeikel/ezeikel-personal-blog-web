@@ -15,9 +15,12 @@
     "inuit-box-sizing": "^0.2.0",
     "inuit-defaults": "^0.2.3",
     "inuit-functions": "^0.2.0",
+    "inuit-layout": "^0.2.2",
     "inuit-mixins": "^0.2.3",
     "inuit-normalize": "^3.0.3",
-    "inuit-page": "^0.2.1"
+    "inuit-page": "^0.2.1",
+    "inuit-tools-widths": "^0.1.4",
+    "inuit-widths": "^0.4.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
