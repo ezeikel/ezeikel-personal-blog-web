@@ -1,0 +1,58 @@
+.hide {
+	display: none !important;
+}
+
+.show {
+	display: inline-block !important;
+}
+
+
+
+
+.hide-palm {
+	@include media-query(palm) {
+		display: none !important;
+	}
+}
+
+.hide-lap-and-up {
+	@include media-query(lap-and-up) {
+		display: none !important;
+	};
+}
+
+.show-lap-and-up {
+	@include media-query(lap-and-up) {
+		display: inline-block !important;
+	};
+}
+
+.bg-cover {
+	background-position: center center !important;
+	background-size: cover !important;
+};
+
+.bg-contain {
+	background-position: center center !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+};
+
+.nav-padding {
+	padding-top: 264px !important;
+}
+
+
+.bg-pan {
+	background-position: center center !important;
+	background-size: 100% !important;
+	background-repeat: no-repeat !important;
+	// transition: background-size 15s ease-out;
+	transition: transform 15s ease-out;
+	transform: translateZ(0);
+
+	&.animate {
+		// background-size: 120% !important;
+		transform: scale(1.2);
+	}
+};

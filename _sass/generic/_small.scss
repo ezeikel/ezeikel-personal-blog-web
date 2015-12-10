@@ -1,0 +1,9 @@
+small {
+	display: block;
+	text-align: center;
+	font-style: italic;
+
+	@include media-query(desk) {
+		font-size: 21px;
+	}
+}

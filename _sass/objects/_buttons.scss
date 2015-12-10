@@ -1,0 +1,41 @@
+.btn--primary {
+	border: 1px solid $secondary-color-light-brown;
+	color: $secondary-color-light-brown;
+	transition: all 0.8s ease;
+	display: inline-block;
+	padding: 12px 96px;
+
+	font-size: 14px;
+
+	@include media-query(lap-and-up) {
+		font-size: 20px;
+	}
+
+
+	&:hover {
+		color: #fff;
+		background: $secondary-color-light-brown;
+	}
+}
+
+.btn--close {
+	top: 0;
+	right: 0;
+	border: 0px;
+	margin: 10px 20px;
+	font-size: 10px;
+	padding: 8px 12px;
+	position: absolute;
+	border-radius: 50px;
+	background-color: $primary-color-light-green;
+}
+
+.btn--primary--sm {
+	padding: 6px;
+	padding-bottom: 4px;
+	text-transform: uppercase;
+
+	@include media-query(lap-and-up) {
+		font-size: 14px;
+	}
+}

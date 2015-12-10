@@ -3,21 +3,59 @@
 ---
 @charset "utf-8";
 
+// Settings
+
 @import "../node_modules/inuit-defaults/settings.defaults";
+@import "../node_modules/inuit-responsive-settings/settings.responsive";
+
+@import "settings/settings-index";
+
+// Tools
 
 @import "../node_modules/inuit-functions/tools.functions";
 @import "../node_modules/inuit-mixins/tools.mixins";
+@import "../node_modules/inuit-responsive-tools/tools.responsive";
+@import "../node_modules/inuit-tools-widths/tools.widths";
+
+@import "tools/tools-index";
+
+// Generic
 
 @import "../node_modules/inuit-normalize/generic.normalize";
 @import "../node_modules/inuit-box-sizing/generic.box-sizing";
+@import "../node_modules/inuit-shared/generic.shared";
+
+@import "generic/generic-index";
+
+// Base
 
 @import "../node_modules/inuit-page/base.page";
+@import "../node_modules/inuit-headings/base.headings";
 
-//After starter kit
+@import "base/base-index";
+
+// Objects
+
+@import "../node_modules/inuit-buttons/objects.buttons";
 @import "../node_modules/inuit-layout/objects.layout";
-@import "../node_modules/inuit-tools-widths/tools.widths";
-@import "../node_modules/inuit-widths/trumps.widths";
+@import "../node_modules/inuit-media/objects.media";
 
+@import "objects/objects-index";
+
+// Components
+
+@import "components/components-index";
+
+// Trumps
+@import "../node_modules/inuit-clearfix/trumps.clearfix";
+@import "../node_modules/inuit-spacing/trumps.spacing";
+@import "../node_modules/inuit-widths/trumps.widths";
+//@import "..node_modules/inuit-responsive-widths/trumps.widths-responsive";
+@import "../node_modules/inuit-responsive-spacing/trumps.spacing-responsive";
+
+@import "trumps/trumps-index";
+
+// TODO: Delete everything below this comment.
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -67,9 +105,3 @@ $on-laptop:        800px;
 //         "footer",
 //         "nav"
 // ;
-
-@import "1-tools/-tools-index",
-        "2-base/-base-index",
-        "3-modules/-modules-index",
-        "4-pages/-pages-index"
-;
