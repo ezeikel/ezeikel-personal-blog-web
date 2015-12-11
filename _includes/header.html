@@ -1,20 +1,20 @@
 <!-- Capture and store a URL -->
 {% capture location %}{{ page.url | split:'/' }}{% endcapture %}
-<header class="main-header" role="banner">
-  <div class="container">
-    <div class="row">
-      <section class="columns twelve">
-        <h1 class="name">Ezeikel Pemberton</h1>
-        <h3 class="subtitle">Web Developer</h3>
+<header class="header text--center page-wrap u-1/1" role="banner">
+  <div class="header__wrapper">
+    <div>
+      <section>
+        <h1 class="header__title font--primary">Ezeikel Pemberton</h1>
+        <h3 class="header__subtitle font--primary">Web Developer</h3>
       </section>
-      <nav class="navbar" role="navigation">
-        <ul class="nav">
+      <nav class="navigation" role="navigation">
+        <ul class="navigation__bar">
           {% for page in site.pages %}
           <!-- Compare the page title to the URL -->
           {% assign current = page.title | downcase %}
             {% if page.title %}
-            <li {% if location == current %} class="nav__item current" {% else %}
-            class="nav__item" {% endif %}>
+            <li {% if location == current %} class="navgation__item current" {% else %}
+            class="navigation__item" {% endif %} >
               <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             </li>
             {% endif %}
@@ -23,4 +23,7 @@
       </nav>
     </div>
   </div>
+  <p class="font--secondary">
+    This is a piece of text to test the font..
+  </p>
 </header>

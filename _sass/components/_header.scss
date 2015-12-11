@@ -1,4 +1,11 @@
-.main-header {
+.header {
     background-color: $primary-color;
     color: #fff;
+    overflow: hidden;
+    &__title {
+        margin-bottom: 0;
+    }
+    &__subtitle {
+        margin-top: 0;
+    }
 }
