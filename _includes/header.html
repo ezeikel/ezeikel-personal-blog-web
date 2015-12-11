@@ -5,10 +5,10 @@
     <div>
       <section>
         <h1 class="header__title font--primary">Ezeikel Pemberton</h1>
-        <h3 class="header__subtitle font--primary">Web Developer</h3>
+        <h3 class="header__subtitle font--primary--light">Web Developer</h3>
       </section>
       <nav class="navigation" role="navigation">
-        <ul class="navigation__bar">
+        <ul class="navigation__bar font--primary--light">
           {% for page in site.pages %}
           <!-- Compare the page title to the URL -->
           {% assign current = page.title | downcase %}

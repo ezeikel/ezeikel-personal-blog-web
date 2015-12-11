@@ -1,14 +1,55 @@
 .font--primary {
-	font-family: "Open Sans", "sans-serif" !important;
+	font-family: "futura-pt", "sans-serif" !important;
 	font-weight: 500 !important;
+	&--light {
+		font-weight: 300 !important;
+	}
+	&--medium {
+		font-weight: 400 !important;
+	}
+	&--bold {
+		font-weight: 700 !important;
+	}
+	&--boldest {
+		font-weight: 800 !important;
+	}
 }
 
 .font--secondary {
-	font-family: "Lora", "serif" !important;
-	font-weight: 300 !important;
+	font-family: "adobe-caslon-pro", "serif" !important;
+	font-weight: 600 !important;
+	&--light {
+		font-weight: 400 !important;
+	}
+	&--bold {
+		font-weight: 700 !important;
+	}
 }
 
 .font--tertiary {
 	font-family: "Didot" !important;
 	font-style: italic !important;
+}
+
+// Icon fonts
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+	content: "\e900";
+}
+.icon-github:before {
+	content: "\e901";
 }
