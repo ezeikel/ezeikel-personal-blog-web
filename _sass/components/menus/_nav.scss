@@ -2,16 +2,14 @@
   &__bar {
     padding-left: 0;
     margin-left: 0;
-    margin-bottom: 0;
+    //margin-bottom: 0;
   }
   &__item {
     display: inline-block;
-    //overflow: hidden;
     &:hover {
       &:after {
-        //transform: translateX(0);
         animation-name: slide;
-        animation-timing-function: ease-out;
+        animation-timing-function: ease-in-out;
         animation-duration: 0.3s;
         transform: translateX(0);
         opacity: 1;

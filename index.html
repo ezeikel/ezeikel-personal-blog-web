@@ -4,18 +4,21 @@ layout: default
 
 <div class="home">
   <!--<h1 class="page-heading">Posts</h1>-->
-  <div class="grid">
+  <div class="posts-grid">
     {% for post in site.posts %}
       <figure class="grid-item">
-        <img src="https://placehold.it/300x300" alt="" />
-        <figcaption class="grid-item__overlay">
-          <section>
-            <h2 class="grid-item__title">
+        <img class="grid-item__image" src="https://placehold.it/300x300" alt="" />
+        <figcaption class="grid-item__text">
+          <article>
+            <h2 class="article-title font--primary font--primary--bold">
               <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
+            <p class="article-excerpt font--primary">
+              {{ post.excerpt | strip_html | truncatewords: 20 }}
+            </p>
             <!--<h4 class="grid-item__first-line">{{ post.author }}</h4>-->
-            <span class="grid-item__second-line">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </section>
+            <span class="article-meta font--primary"><span class="icon icon-calendar"></span>{{ post.date | date: "%m/%d/%Y" }}</span>
+          </article>
         </figcaption>
       </figure>
     {% endfor %}
