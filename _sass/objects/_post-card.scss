@@ -23,16 +23,20 @@
   font-size: 22px;
   line-height: 26px;
   text-transform: uppercase;
+  &:hover {
+    color: lighten(#000, 35%); 
+  }
 }
 
 .article-excerpt {
   color: #6d6d6d;
+  font-size: 17px;
 }
 
 .article-meta {
   font-size: 14px;
   color: #818181;
-  letter-spacing: -1px;
+  //letter-spacing: -1px;
 }
 // TODO: Copy this site
 // http://callmenick.com/
