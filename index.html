@@ -17,11 +17,11 @@ layout: default
               {{ post.excerpt | strip_html | truncatewords: 20 }}
             </p>
             <!--<h4 class="grid-item__first-line">{{ post.author }}</h4>-->
-            <span class="article-meta font--primary"><span class="icon icon-calendar"></span>{{ post.date | date: '%B %d, %Y' }}</span>
+            <span class="article-meta font--primary"><i class="icon icon-calendar"></i>{{ post.date | date: '%B %d, %Y' }}</span> <span>{{ page.categories }}</span>
           </article>
         </figcaption>
       </figure>
     {% endfor %}
   </div>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribee <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
