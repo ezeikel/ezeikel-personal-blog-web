@@ -24,7 +24,7 @@
   line-height: 26px;
   text-transform: uppercase;
   &:hover {
-    color: lighten(#000, 35%); 
+    color: lighten(#000, 35%);
   }
 }
 
@@ -34,9 +34,12 @@
 }
 
 .article-meta {
-  font-size: 14px;
+  //font-size: 14px;
   color: #818181;
   //letter-spacing: -1px;
+  .fa {
+    margin-right: 10px;
+  }
 }
 // TODO: Copy this site
 // http://callmenick.com/
