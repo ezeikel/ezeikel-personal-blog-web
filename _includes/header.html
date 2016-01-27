@@ -1,26 +1,27 @@
 <!-- Capture and store a URL -->
 {% capture location %}{{ page.url | split:'/' }}{% endcapture %}
-<header class="header text--center page-wrap u-1/1" role="banner">
+<header class="header text--center" role="banner">
   <div class="header__wrapper">
     <div>
-      <section>
-        <h1 class="header__title font--primary">Ezeikel Pemberton</h1>
-        <h3 class="header__subtitle font--primary font--primary--light">Web Developer x Photographer</h3>
+      <section class="hero row">
+        <div class="hero-grid large-6 large-centered columns">
+          <div class="hero-holder">
+            <div class="hero-inner">
+              <div "hero-title-wrapper">
+                <h1 class="hero-title font--primary">Welcome to the jungle.</h1>
+              </div>
+              <div class="hero-description-wrapper">
+                <span class="hero-description font--secondary uppercase">The best web developer in the world.</span>
+              </div>
+              <div class="hero-btn-wrapper">
+                <span class="hero-btn-holder">
+                  <a class="hero-btn uppercase">Click here</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <nav class="navigation" role="navigation">
-        <ul class="navigation__bar font--primary font--primary--light">
-          {% for page in site.pages %}
-          <!-- Compare the page title to the URL -->
-          {% assign current = page.title | downcase %}
-            {% if page.title %}
-            <li {% if location == current %} class="navgation__item current" {% else %}
-            class="navigation__item" {% endif %} >
-              <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </nav>
     </div>
   </div>
 </header>

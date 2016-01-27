@@ -1,62 +1,11 @@
 .font--primary {
-	font-family: "futura-pt", "sans-serif" !important;
-	font-weight: 500 !important;
-	&--light {
-		font-weight: 300 !important;
-	}
-	&--medium {
-		font-weight: 400 !important;
-	}
-	&--bold {
-		font-weight: 700 !important;
-	}
-	&--boldest {
-		font-weight: 800 !important;
-	}
+	font-family: "ff-market-web" !important;
 }
 
 .font--secondary {
-	font-family: "adobe-caslon-pro", "Georgia", "Times New Roman", "serif" !important;
-	font-weight: 600 !important;
-	&--light {
-		font-weight: 400 !important;
-	}
-	&--bold {
-		font-weight: 700 !important;
-	}
+	font-family: "futura-pt" !important;
 }
 
 .font--tertiary {
-	font-family: "Didot" !important;
-	font-style: italic !important;
-}
-
-// Icon fonts
-[class^="icon-"], [class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icomoon' !important;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon {
-	margin-right: 0.5em;
-}
-
-.icon-calendar:before {
-	content: "\e900";
-}
-.icon-twitter:before {
-	content: "\e901";
-}
-.icon-github:before {
-	content: "\e902";
+	font-family: "adobe-caslon-pro" !important;
 }
