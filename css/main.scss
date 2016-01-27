@@ -3,42 +3,27 @@
 ---
 @charset "utf-8";
 
-// Settings
+// Libs
 
-@import "../node_modules/inuit-defaults/settings.defaults";
-@import "../node_modules/inuit-responsive-settings/settings.responsive";
+@import "libs/libs-index";
+
+// Settings
 
 @import "settings/settings-index";
 
 // Tools
 
-@import "../node_modules/inuit-functions/tools.functions";
-@import "../node_modules/inuit-mixins/tools.mixins";
-@import "../node_modules/inuit-responsive-tools/tools.responsive";
-@import "../node_modules/inuit-tools-widths/tools.widths";
-
 @import "tools/tools-index";
 
 // Generic
-
-@import "../node_modules/inuit-normalize/generic.normalize";
-@import "../node_modules/inuit-box-sizing/generic.box-sizing";
-@import "../node_modules/inuit-shared/generic.shared";
 
 @import "generic/generic-index";
 
 // Base
 
-@import "../node_modules/inuit-page/base.page";
-@import "../node_modules/inuit-headings/base.headings";
-
 @import "base/base-index";
 
 // Objects
-
-@import "../node_modules/inuit-buttons/objects.buttons";
-@import "../node_modules/inuit-layout/objects.layout";
-@import "../node_modules/inuit-media/objects.media";
 
 @import "objects/objects-index";
 
@@ -47,11 +32,6 @@
 @import "components/components-index";
 
 // Trumps
-@import "../node_modules/inuit-clearfix/trumps.clearfix";
-@import "../node_modules/inuit-spacing/trumps.spacing";
-@import "../node_modules/inuit-widths/trumps.widths";
-//@import "..node_modules/inuit-responsive-widths/trumps.widths-responsive";
-@import "../node_modules/inuit-responsive-spacing/trumps.spacing-responsive";
 
 @import "trumps/trumps-index";
 
@@ -87,11 +67,11 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }it
 // }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
+// @mixin media-query($device) {
+//     @media screen and (max-width: $device) {
+//         @content;
+//     }
+// }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 // @import

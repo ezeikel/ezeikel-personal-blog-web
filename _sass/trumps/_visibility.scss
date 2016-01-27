@@ -7,25 +7,25 @@
 }
 
 
-
-
-.hide-palm {
-	@include media-query(palm) {
-		display: none !important;
-	}
-}
-
-.hide-lap-and-up {
-	@include media-query(lap-and-up) {
-		display: none !important;
-	};
-}
-
-.show-lap-and-up {
-	@include media-query(lap-and-up) {
-		display: inline-block !important;
-	};
-}
+//
+//
+// .hide-palm {
+// 	@include media-query(palm) {
+// 		display: none !important;
+// 	}
+// }
+//
+// .hide-lap-and-up {
+// 	@include media-query(lap-and-up) {
+// 		display: none !important;
+// 	};
+// }
+//
+// .show-lap-and-up {
+// 	@include media-query(lap-and-up) {
+// 		display: inline-block !important;
+// 	};
+// }
 
 .bg-cover {
 	background-position: center center !important;

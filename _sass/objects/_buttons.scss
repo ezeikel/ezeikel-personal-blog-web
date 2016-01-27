@@ -7,9 +7,9 @@
 
 	font-size: 14px;
 
-	@include media-query(lap-and-up) {
-		font-size: 20px;
-	}
+	// @include media-query(lap-and-up) {
+	// 	font-size: 20px;
+	// }
 
 
 	&:hover {
@@ -35,7 +35,7 @@
 	padding-bottom: 4px;
 	text-transform: uppercase;
 
-	@include media-query(lap-and-up) {
-		font-size: 14px;
-	}
+	// @include media-query(lap-and-up) {
+	// 	font-size: 14px;
+	// }
 }

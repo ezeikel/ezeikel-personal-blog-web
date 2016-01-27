@@ -2,8 +2,4 @@ p {
 	//font-size: 12px;
 	//font-family: "Open Sans";
 	//font-weight: 700;
-
-	@include media-query(lap-and-up) {
-		//font-size: 1em;
-	};
 }
