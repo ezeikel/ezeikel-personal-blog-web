@@ -1,19 +1,33 @@
-.posts-grid {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin: 10px;
+.home {
   &:after {
     content: "";
-    display: table;
+    display: block;
+    clear: both;
+  }
+}
+
+.posts-grid {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  //align-items: center;
+  align-content: flex-start;
+  height: 100vh;
+  //font-size: 0;
+  //margin: 10px;
+  &:after {
+    content: "";
+    display: block;
     clear: both;
   }
   .grid-item {
     position: relative;
     display: table;
-    margin: 10px;
+    margin: 0 auto;
+    margin-top: 25px;
     width: 350px;
+    max-width: 100%;
     overflow: hidden;
     &:hover .grid-item__text {
       transform: translateY(0%);
