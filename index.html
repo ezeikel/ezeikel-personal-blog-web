@@ -10,14 +10,14 @@ layout: default
         <img class="grid-item__image" src="https://placehold.it/300x300" alt="" />
         <figcaption class="grid-item__text">
           <article>
-            <h2 class="article-title font--primary font--primary--bold">
+            <h2 class="article-title font--secondary">
               <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
-            <p class="article-excerpt font--primary">
+            <p class="article-excerpt font--secondary">
               {{ post.excerpt | strip_html | truncatewords: 20 }}
             </p>
             <!--<h4 class="grid-item__first-line">{{ post.author }}</h4>-->
-            <span class="article-meta font--primary"><i class="fa fa-calendar"></i>{{ post.date | date: "%Y-%m-%d" }}</span><!-- <span>{{ page.categories }}</span>-->
+            <span class="article-meta font--secondary"><i class="fa fa-calendar"></i>{{ post.date | date: "%Y-%m-%d" }}</span><!-- <span>{{ page.categories }}</span>-->
           </article>
         </figcaption>
       </figure>
