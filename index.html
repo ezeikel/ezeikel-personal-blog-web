@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home page-wrap">
+<div class="home">
   <!--<h1 class="page-heading">Posts</h1>-->
   <div class="posts-grid">
     {% for post in site.posts %}
@@ -13,11 +13,9 @@ layout: default
             <h2 class="article-title font--secondary">
               <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
-            <p class="article-excerpt font--secondary">
+            <!-- <p class="article-excerpt font--secondary">
               {{ post.excerpt | strip_html | truncatewords: 20 }}
-            </p>
-            <!--<h4 class="grid-item__first-line">{{ post.author }}</h4>-->
-            <span class="article-meta font--secondary"><i class="fa fa-calendar"></i>{{ post.date | date: "%Y-%m-%d" }}</span><!-- <span>{{ page.categories }}</span>-->
+            </p> -->
           </article>
         </figcaption>
       </figure>
