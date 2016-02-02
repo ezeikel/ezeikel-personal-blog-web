@@ -18,11 +18,17 @@ body { background: #f2f2f2}
     float: left;
     margin: 25px 1px 0 1px;
     &__image {
-      background-image: url("https://placehold.it/300x300");
+      background: lightgrey;
       height: 300px;
       width: 100%;
-      min-width: 100%;
-      max-width: 100%;
+    }
+    @media (max-width: 960px) {
+      width: 50%;
+      width: calc(50% - 2px);
+    }
+    @media (max-width: 640px) {
+      width: 100%;
+      width: calc(100% - 2px);
     }
   }
 }
