@@ -1,0 +1,13 @@
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.clearfx:after {
+  display: block;
+  content: "";
+  clear: both;
+}

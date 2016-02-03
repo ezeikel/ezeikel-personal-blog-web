@@ -1,4 +1,5 @@
 .header {
+  padding-top: 90px;
   .hero {
     min-height: 100vh;
     min-width: 100vw;
@@ -43,6 +44,26 @@
       }
       &-wrapper {
         margin-top: 20px;
+      }
+    }
+  }
+  .nav-menu {
+    background: tomato;
+    position: fixed;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    z-index: 10;
+    ul {
+      display: inline-block;
+      //float: left;
+      margin-left: 0;
+      margin-top: 16px;
+    }
+    ul > li {
+      display: inline-block;
+      + li {
+        margin-left: 5px;
       }
     }
   }
