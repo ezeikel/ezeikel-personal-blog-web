@@ -10,9 +10,9 @@ body {
 }
 
 .landing-container {
-  display: flex;
-  flex-direction: column;
-  flex: wrap;
+  //display: flex;
+  //flex-direction: column;
+  //flex-wrap: wrap;
   text-align: center;
   h1 {
     font-size: 45px;
@@ -27,8 +27,20 @@ body {
     font-size: 15px;
     font-weight: 300;
     text-transform: uppercase;
+    position: relative;
     @media (min-width: 1021px) {
       font-size: 30px;
+    }
+    .cursor {
+      display: inline-block;
+      height: 2px;
+      width: 10px;
+      background-color: #fff;
+      margin-left: 5px;
+      animation: cursor-blink 0.5s ease infinite alternate;
+      @media (min-width: 1021px) {
+        width: 16px;
+      }
     }
   }
   .contact-links {
@@ -43,5 +55,15 @@ body {
   }
   .fa {
     margin-right: 10px;
+  }
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
