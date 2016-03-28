@@ -1,27 +1,8 @@
 ---
-layout: default
+layout: landing
 ---
 
 <div class="home page-wrap">
+  Yo
   <!--<h1 class="page-heading">Posts</h1>-->
-  <div class="posts-grid">
-    {% for post in site.posts %}
-      <figure class="grid-item">
-        <img class="grid-item__image" src="https://placehold.it/300x300" alt="" />
-        <figcaption class="grid-item__text">
-          <article>
-            <h2 class="article-title font--primary font--primary--bold">
-              <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-            <p class="article-excerpt font--primary">
-              {{ post.excerpt | strip_html | truncatewords: 20 }}
-            </p>
-            <!--<h4 class="grid-item__first-line">{{ post.author }}</h4>-->
-            <span class="article-meta font--primary"><i class="icon icon-calendar"></i>{{ post.date | date: '%B %d, %Y' }}</span><!-- <span>{{ page.categories }}</span>-->
-          </article>
-        </figcaption>
-      </figure>
-    {% endfor %}
-  </div>
-  <p class="rss-subscribe">subscribee <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
