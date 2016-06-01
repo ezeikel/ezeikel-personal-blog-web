@@ -5,18 +5,18 @@ description: The best Web Developer in the world!
 url: "http://ezeikel.co.uk" # the base hostname & protocol for your site
 twitter_username: ezeikel_
 github_username:  ezeikel_
-paginate: 5
+#paginate: 5
 
 # Build settings
 markdown: kramdown
 permalink: /:title
 gems:
-  - jekyll-paginate
-  - jekyll-mentions
-  - jemoji
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-feed
+  #- jekyll-paginate
+  #- jekyll-mentions
+  #- jemoji
+  #- jekyll-redirect-from
+  #- jekyll-sitemap
+  #- jekyll-feed
 
 defaults:
   -
