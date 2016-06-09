@@ -1,0 +1,77 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+  }
+}
+
+.blog-posts {
+  background-color: tomato;
+  color: white;
+}
+
+.about-me {
+  background-color: #27ae60;
+  color: white;
+  i {
+    color: $white;
+    &.fa-chevron-down {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      animation: bounce 1.5s ease-in-out alternate infinite;
+      @media (min-width: $breakpoint-tablet) {
+        display: none;
+      }
+    }
+  }
+  .social-links {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: column;
+      a + a {
+        margin-top: 20px;
+      }
+
+    }
+  }
+}
+
+.blog-posts, .about-me {
+  padding: 25px;
+  height: 100vh;
+  width: 100%;
+  @media (min-width: $breakpoint-tablet) {
+    width: 50%;
+  }
+  .heading {
+    //padding: 25px 25px 0;
+    font-weight: 400;
+    text-align: center;
+  }
+  .sub-heading {
+    margin-top: 20px;
+    font-weight: 200;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .intro {
+    margin-top: 20px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%) translateX(-50%);
+
+  }
+  50% {
+    transform: translateY(100%) translateX(-50%);
+  }
+  100% {
+    transform: translateY(0%) translateX(-50%);
+  }
+}

@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $primary-font-family;
+}
+
+// h1 {font-size: modular-scale(2, $base-font-size);}
+// h2 {font-size: modular-scale(1.5, $base-font-size);}
+// h3 {font-size: modular-scale(1, $base-font-size);}
+// h4 {font-size: modular-scale(0.5, $base-font-size);}
+// h5 {font-size: modular-scale(1, $base-font-size);}
+// h6 {font-size: modular-scale(1, $base-font-size);}
+
+h1 {
+  font-size: rem(54px);
+  line-height: rem(64px);
+}
+
+h3 {
+  font-size: rem(30px);
+  line-height: rem(40px);
+}

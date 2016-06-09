@@ -1,3 +1,7 @@
-a {
+a,
+a:visited,
+a:link,
+a:active {
   text-decoration: none;
+  color: $primary-text-color;
 }

@@ -1,0 +1,20 @@
+body {
+  @include box-sizing(border-box);
+  font-family: $primary-font-family;
+  font-size: $base-font-size;
+}
+
+//
+// p.scale {
+//   font-size: modular-scale(2, $base-font-size); //1em
+//}
+
+// Needs to be moved somewhere else
+body {
+  color: $primary-text-color;
+  @include outer-container(100%);
+  .grid-test {
+    //@include span-columns(3);
+    overflow: hidden;
+  }
+}
