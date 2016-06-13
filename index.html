@@ -2,32 +2,31 @@
 layout: landing
 ---
 
-<div class="home row full-width">
-  <!--<h1 class="page-heading">Posts</h1>-->
-  <div class="posts-grid columns">
-    {% for post in site.posts %}
-        <article class="grid-item">
-          <figure class="blog-item">
-          <span class="overlay font--secondary uppercase"><span class="content"><span class="inner"><span class="more">Check it out</span></span></span></span>
-             <div class="grid-item__image">
-             </div>
-             <!-- <figcaption class="details">
-                 <h2 class="article-title font--secondary">
-                   <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                 </h2>
-                 <p class="article-excerpt font--secondary">
-                   {{ post.excerpt | strip_html | truncatewords: 20 }}
-                 </p>
-             </figcaption> -->
-          </figure>
-          <header class="details">
-            <h4 class="title font--secondary uppercase"><a class="" href="{{ post.url | prepend: site.baseurl }}"><span>{{ post.title }}</span></a></h4>
-            <!-- <h3 class="article-excerpt font--secondary">
-              {{ post.excerpt | strip_html | truncatewords: 20 }}
-            </h3> -->
-          </header>
-        </article>
-    {% endfor %}
-  </div>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="posts-grid">
+  {% for post in site.posts %}
+      <article class="grid-item">
+        <figure class="blog-item">
+           <div class="grid-item__image">
+           </div>
+           <!-- <figcaption class="details">
+               <h2 class="article-title font--secondary">
+                 <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+               </h2>
+               <p class="article-excerpt font--secondary">
+                 {{ post.excerpt | strip_html | truncatewords: 20 }}
+               </p>
+           </figcaption> -->
+           <figcaption>
+
+           </figcaption>
+        </figure>
+        <!-- <header class="details">
+          <h4 class="title font--secondary uppercase"><a class="" href="{{ post.url | prepend: site.baseurl }}"><span>{{ post.title }}</span></a></h4>
+          <!-- <h3 class="article-excerpt font--secondary">
+            {{ post.excerpt | strip_html | truncatewords: 20 }}
+          </h3>
+        </header> -->
+      </article>
+  {% endfor %}
 </div>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

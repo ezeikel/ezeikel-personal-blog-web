@@ -1,6 +1,1 @@
-// $(".grid").masonry({
-//   // options...
-//   itemSelector: '.grid-item',
-//   columnWidth: 1,
-//   //percentPosition: true
-// });
+var skills = ["Front End", "CSS", "JavaScript", "SASS", "BackboneJS", "ES6", "jQuery", "Lodash", "UnderscoreJS", "HandlebarsJS"];
