@@ -1,3 +1,47 @@
 .posts-grid {
   display: flex;
+  flex-direction: column;
+  @media (min-width: $breakpoint-mobile) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .post-container {
+    border-radius: 4px;
+    width: 100%;
+    @media (min-width: $breakpoint-desktop) {
+      width: 50%;
+    }
+  }
+}
+
+.post {
+  position: relative;
+  margin: em(10px);
+}
+
+.post__link {
+  //position: absolute;
+  // height: 100%;
+  // width: 100%;
+}
+
+.post__content {
+  background: $white;
+  border-radius: 0 0 4px 4px;
+  height: auto;
+  min-height: 9.2em;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.post__image {
+  display: block;
+  min-height: 9.2em;
+  height: auto;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.tom {
+  background-color: tomato;
 }

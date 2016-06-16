@@ -2,31 +2,23 @@
 layout: landing
 ---
 
+<!--<h1 class="page-heading">Posts</h1>-->
 <div class="posts-grid">
-  {% for post in site.posts %}
-      <article class="grid-item">
-        <figure class="blog-item">
-           <div class="grid-item__image">
-           </div>
-           <!-- <figcaption class="details">
-               <h2 class="article-title font--secondary">
-                 <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-               </h2>
-               <p class="article-excerpt font--secondary">
-                 {{ post.excerpt | strip_html | truncatewords: 20 }}
-               </p>
-           </figcaption> -->
-           <figcaption>
-
-           </figcaption>
+    {% for post in site.posts %}
+    <article class="post-container">
+        <figure class="post">
+            <a class="post__link" href="#">
+                <img class="post__image" src="https://placehold.it/300x150" alt="" />
+                <figcaption class="post__content">
+                    <h4 class="post__title">Hello World</h4>
+                    <div class="post__summary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </figcaption>
+            </a>
         </figure>
-        <!-- <header class="details">
-          <h4 class="title font--secondary uppercase"><a class="" href="{{ post.url | prepend: site.baseurl }}"><span>{{ post.title }}</span></a></h4>
-          <!-- <h3 class="article-excerpt font--secondary">
-            {{ post.excerpt | strip_html | truncatewords: 20 }}
-          </h3>
-        </header> -->
-      </article>
-  {% endfor %}
+    </article>
+    {% endfor %}
+
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p> -->
 </div>
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

@@ -15,11 +15,12 @@
   background-color: $white;
   color: $black;
   i {
-    color: $white;
+    color: $black;
     &.fa-chevron-down {
       position: absolute;
       bottom: 100px;
       left: 50%;
+      color: #1abc9c;
       animation: bounce 1.5s ease-in-out alternate infinite;
       @media (min-width: $breakpoint-tablet) {
         display: none;
@@ -43,7 +44,8 @@
 
 .blog-posts, .about-me {
   padding: 25px;
-  height: 100vh;
+  min-height: 100vh;
+  //height: 100vh;
   width: 100%;
   @media (min-width: $breakpoint-tablet) {
     width: 50%;
