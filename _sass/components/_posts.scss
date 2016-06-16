@@ -26,7 +26,7 @@
 }
 
 .post__content {
-  background: $white;
+  background: $color-white;
   border-radius: 0 0 4px 4px;
   height: auto;
   min-height: 9.2em;
@@ -36,8 +36,8 @@
 
 .post__image {
   display: block;
-  min-height: 9.2em;
-  height: auto;
+  //min-height: 9.2em;
+  height: em(344px);
   width: 100%;
   border-radius: 4px 4px 0 0;
 }

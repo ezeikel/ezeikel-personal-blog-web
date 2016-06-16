@@ -7,20 +7,20 @@
 }
 
 .blog-posts {
-  background-color: #1abc9c;
-  color: white;
+  background-color: $color-primary;
+  color: $color-white;
 }
 
 .about-me {
-  background-color: $white;
-  color: $black;
+  background-color: $color-white;
+  color: $color-black;
   i {
-    color: $black;
+    color: $color-black;
     &.fa-chevron-down {
       position: absolute;
       bottom: 100px;
       left: 50%;
-      color: #1abc9c;
+      color: $color-primary;
       animation: bounce 1.5s ease-in-out alternate infinite;
       @media (min-width: $breakpoint-tablet) {
         display: none;
@@ -31,6 +31,13 @@
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    i {
+      color: $color-black;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: $color-primary;
+      }
+    }
     @media (min-width: $breakpoint-tablet) {
       flex-direction: column;
       width: 42px;
