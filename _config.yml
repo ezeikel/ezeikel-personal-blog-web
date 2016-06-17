@@ -10,6 +10,7 @@ github_username:  ezeikel_
 # Build settings
 markdown: kramdown
 permalink: /:title
+excerpt_separator: <!--more-->
 gems:
   #- jekyll-paginate
   #- jekyll-mentions

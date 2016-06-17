@@ -1,92 +1,165 @@
 .landing {
-  display: flex;
-  flex-direction: column;
-  @media (min-width: $breakpoint-tablet) {
-    flex-direction: row;
-  }
-}
-
-.blog-posts {
-  background-color: $color-primary;
-  color: $color-white;
-}
-
-.about-me {
-  background-color: $color-white;
-  color: $color-black;
-  i {
-    color: $color-black;
-    &.fa-chevron-down {
-      position: absolute;
-      bottom: 100px;
-      left: 50%;
-      color: $color-primary;
-      animation: bounce 1.5s ease-in-out alternate infinite;
-      @media (min-width: $breakpoint-tablet) {
-        display: none;
-      }
-    }
-  }
-  .social-links {
-    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
-    i {
-      color: $color-black;
-      transition: color 0.3s ease-in-out;
-      &:hover {
-        color: $color-primary;
-      }
-    }
+    flex-direction: column;
     @media (min-width: $breakpoint-tablet) {
-      flex-direction: column;
-      width: 42px;
-      a + a {
-        margin-top: 20px;
-      }
-
+        flex-direction: row;
     }
-  }
-}
-
-.blog-posts, .about-me {
-  padding: 25px;
-  min-height: 100vh;
-  width: 100%;
-  @media (min-width: $breakpoint-tablet) {
-    width: 50%;
-  }
-
-  .heading {
-    font-weight: 400;
-    text-align: center;
-  }
-
-  .sub-heading {
-    margin-top: 20px;
-    font-weight: 200;
-    text-align: center;
-  }
-
-  .intro {
-    margin-top: 20px;
-    font-size: em(19px);
-    @media (min-width: $breakpoint-desktop) {
-      margin-top: 50px;
-      text-align: center;
+    .landing__blog-posts {
+        background-color: $color-primary;
+        color: $color-white;
     }
-  }
+    .landing__about-me {
+        background-color: $color-white;
+        color: $color-black;
+        i {
+            color: $color-black;
+            &.fa-chevron-down {
+                position: absolute;
+                bottom: 100px;
+                left: 50%;
+                color: $color-primary;
+                animation: bounce 1.5s ease-in-out alternate infinite;
+                @media (min-width: $breakpoint-tablet) {
+                    display: none;
+                }
+            }
+        }
+        .social-links {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            i {
+                color: $color-black;
+                transition: color 0.3s ease-in-out;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+            @media (min-width: $breakpoint-tablet) {
+                flex-direction: column;
+                width: 42px;
+                a + a {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .landing__about-me,
+    .landing__blog-posts {
+        padding: 25px;
+        min-height: 100vh;
+        width: 100%;
+        @media (min-width: $breakpoint-tablet) {
+            width: 50%;
+        }
+        .heading {
+            font-weight: 400;
+            text-align: center;
+        }
+        .sub-heading {
+            margin-top: 20px;
+            font-weight: 200;
+            text-align: center;
+        }
+        .intro {
+            margin-top: 20px;
+            font-size: em(19px);
+            @media (min-width: $breakpoint-desktop) {
+                margin-top: 50px;
+                text-align: center;
+            }
+        }
+    }
+    .posts-preview {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $breakpoint-mobile) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .post-preview__container {
+            border-radius: 4px;
+            width: 100%;
+            @media (min-width: $breakpoint-desktop) {
+                width: 50%;
+            }
+        }
+    }
+    .post-preview__post {
+        position: relative;
+        margin: em(10px);
+    }
+    .post-preview__link {}
+    .post-preview__content {
+        background: $color-white;
+        border-radius: 0 0 4px 4px;
+        height: auto;
+        min-height: 9.2em;
+        padding: 20px;
+        overflow: hidden;
+        @media (min-width: $breakpoint-desktop) {
+            padding: 40px;
+        }
+        .post-preview__title {
+            display: inline-block;
+            position: relative;
+            font-size: em(22px);
+            text-align: center;
+            margin-bottom: em(10px);
+            padding-bottom: 10px;
+            @media (min-width: $breakpoint-desktop) {}
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                background-color: $color-primary;
+                @media (min-width: $breakpoint-desktop) {
+                    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+            }
+            &:hover {
+                @media (min-width: $breakpoint-desktop) {
+                    transform: scale(1.1);
+                    transition: transform 0.3s ease-in-out;
+                }
+                &:after {
+                    @media (min-width: $breakpoint-desktop) {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .post-preview__summary {
+            color: lighten($color-black, 45%);
+        }
+    }
+    .post-preview__image {
+        display: block;
+        height: em(344px);
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .tom {
+        background-color: tomato;
+    }
 }
-
 @keyframes bounce {
-  0% {
-    transform: translateY(0%) translateX(-50%);
-
-  }
-  50% {
-    transform: translateY(100%) translateX(-50%);
-  }
-  100% {
-    transform: translateY(0%) translateX(-50%);
-  }
+    0% {
+        transform: translateY(0%) translateX(-50%);
+    }
+    50% {
+        transform: translateY(100%) translateX(-50%);
+    }
+    100% {
+        transform: translateY(0%) translateX(-50%);
+    }
 }

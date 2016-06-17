@@ -6,16 +6,9 @@
 
   <body>
 
-    {% include header.html %}
+    {{ content }}
 
-
-        {{ content }}
-
-
-    {% include footer.html %}
-    <script src="https://use.typekit.net/ndi2kff.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script src="js/main.js"></script>
+    {% include scripts.html %}
   </body>
 
 </html>

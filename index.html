@@ -2,17 +2,16 @@
 layout: landing
 ---
 
-<div class="posts-grid">
+<div class="posts-preview">
     {% for post in site.posts %}
-    <article class="post-container">
-        <figure class="post">
-            <a class="post__link" href="#">
-                <!-- <img class="post__image" src="https://placehold.it/300x344" alt="" /> -->
-                <div class="post__image" style="background-image: url(http://placehold.it/300x344)"></div>
-                <figcaption class="post__content">
-                    <h4 class="post__title">Hello World</h4>
-                    <div class="post__summary">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <article class="post-preview__container">
+        <figure class="post-preview__post">
+            <a class="post-preview__link" href="{{ post.url | prepend: site.baseurl }}">
+                <div class="post-preview__image" style="background-image: url(http://placehold.it/300x344)"></div>
+                <figcaption class="post-preview__content">
+                    <h4 class="post-preview__title">{{ post.title }}</h4>
+                    <div class="post-preview__summary">
+                        {{ post.excerpt | strip_html | truncatewords: 15 }}
                     </div>
                 </figcaption>
             </a>
