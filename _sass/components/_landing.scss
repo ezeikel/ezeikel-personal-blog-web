@@ -52,23 +52,29 @@
 .blog-posts, .about-me {
   padding: 25px;
   min-height: 100vh;
-  //height: 100vh;
   width: 100%;
   @media (min-width: $breakpoint-tablet) {
     width: 50%;
   }
+
   .heading {
     font-weight: 400;
     text-align: center;
   }
+
   .sub-heading {
     margin-top: 20px;
     font-weight: 200;
     text-align: center;
-    //text-decoration: underline;
   }
+
   .intro {
     margin-top: 20px;
+    font-size: em(19px);
+    @media (min-width: $breakpoint-desktop) {
+      margin-top: 50px;
+      text-align: center;
+    }
   }
 }
 
