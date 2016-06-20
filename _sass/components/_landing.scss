@@ -15,7 +15,7 @@
             color: $color-black;
             &.fa-chevron-down {
                 position: absolute;
-                bottom: 100px;
+                bottom: 50px;
                 left: 50%;
                 color: $color-primary;
                 animation: bounce 1.5s ease-in-out alternate infinite;
@@ -24,10 +24,38 @@
                 }
             }
         }
+        .projects {
+          margin-top: 30px;
+        }
+        .projects__title {
+          position: relative;
+          padding-bottom: 5px;
+          font-size: em(22px);
+          line-height: 2.1rem;
+          font-weight: 600;
+          display: inline-block;
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            background-color: $color-primary;
+          }
+        }
+        .projects__list {
+          list-style-type: none;
+          padding: 0;
+          line-height: 1.5em;
+          .project > span {
+            display: inline-block;
+            width: 100%;
+          }
+        }
         .social-links {
             margin-top: 50px;
             display: flex;
-            justify-content: space-between;
             i {
                 color: $color-black;
                 transition: color 0.3s ease-in-out;
@@ -35,14 +63,16 @@
                     color: $color-primary;
                 }
             }
+            a + a {
+                margin-left: 20px;
+            }
             @media (min-width: $breakpoint-tablet) {
-                flex-direction: column;
-                width: 42px;
-                a + a {
-                    margin-top: 20px;
-                }
+              position: absolute;
+              bottom: 0;
+              margin-bottom: 50px;
             }
         }
+
     }
     .landing__about-me,
     .landing__blog-posts {
@@ -63,6 +93,7 @@
         }
         .intro {
             margin-top: 20px;
+            margin-bottom: 0;
             font-size: em(19px);
             @media (min-width: $breakpoint-desktop) {
                 margin-top: 50px;
@@ -106,7 +137,7 @@
             font-size: em(22px);
             text-align: center;
             margin-bottom: em(10px);
-            padding-bottom: 10px;
+            padding-bottom: 5px;
             @media (min-width: $breakpoint-desktop) {}
             &:after {
                 content: "";
@@ -124,7 +155,7 @@
             }
             &:hover {
                 @media (min-width: $breakpoint-desktop) {
-                    transform: scale(1.1);
+                    //transform: scale(1.1);
                     transition: transform 0.3s ease-in-out;
                 }
                 &:after {
@@ -141,7 +172,7 @@
     }
     .post-preview__image {
         display: block;
-        height: em(344px);
+        height: em(244.8px);
         width: 100%;
         border-radius: 4px 4px 0 0;
         background-repeat: no-repeat;
