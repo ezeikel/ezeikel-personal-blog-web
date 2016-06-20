@@ -3,10 +3,14 @@
     padding: 25px;
   }
 
+  .post__title {
+    margin-bottom: rem(20px);
+  }
+
   .post__meta {
     color: $color-primary;
   }
-  
+
   .post__image {
     background-repeat: no-repeat;
     background-size: cover;
