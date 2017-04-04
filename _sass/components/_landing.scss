@@ -71,10 +71,10 @@
                 }
             }
         }
-        .projects {
+        .projects, .experience {
           margin-top: 30px;
         }
-        .projects__title {
+        .projects__title, .experience__title {
           position: relative;
           padding-bottom: 5px;
           font-size: em(22px);
@@ -91,10 +91,10 @@
             background-color: $color-primary;
           }
         }
-        .projects__list {
+        .projects__list, .experience__list {
           list-style-type: none;
           line-height: 1.5em;
-          .project > span {
+          .project > span, .experience__list-item > span {
             display: inline-block;
             width: 100%;
           }
@@ -141,9 +141,12 @@
             margin-top: 20px;
             margin-bottom: 0;
             font-size: em(19px);
+            & + .intro {
+              margin-top: 25px;
+            }
             @media (min-width: $breakpoint-desktop) {
                 margin-top: 50px;
-                text-align: center;
+                //text-align: center;
             }
         }
     }

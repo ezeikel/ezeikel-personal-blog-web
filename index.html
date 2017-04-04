@@ -1,28 +1,11 @@
 ---
 layout: landing
 ---
-
-<!-- <div class="posts-preview"> -->
-  <h1 class="heading">Posts</h1>
-  <p>My most recent posts:</p>
-  <ul>
-    {% for post in site.posts %}
-    <!-- <article class="post-preview__container">
-        <figure class="post-preview__post">
-            <a class="post-preview__link" href="{{ post.url | prepend: site.baseurl }}">
-                <div class="post-preview__image" style="background-image: url({{ site.baseurl }}/assets/images/{{ post.image }})"></div>
-                <figcaption class="post-preview__content">
-                    <h4 class="post-preview__title">{{ post.title }}</h4>
-                    <div class="post-preview__summary">
-                        {{ post.excerpt | strip_html | truncatewords: 15 }}
-                    </div>
-                </figcaption>
-            </a>
-        </figure>
-    </article> -->
-    <li>
-      <a class="post-preview__link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
-    {% endfor %}
-  </ul>
-    <!-- <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p> -->
-<!-- </div> -->
+<h1 class="heading">Posts</h1>
+<p>My most recent posts:</p>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a class="post-preview__link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+  {% endfor %}
+</ul>
