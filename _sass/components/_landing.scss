@@ -105,7 +105,7 @@
         .projects__title, .experience__title {
           position: relative;
           padding-bottom: 5px;
-          font-size: em(22px);
+          font-size: rem(22);
           line-height: 2.1rem;
           font-weight: 600;
           display: inline-block;
@@ -169,7 +169,7 @@
         .intro {
             margin-top: 20px;
             margin-bottom: 0;
-            font-size: em(19px);
+            font-size: rem(19);
             & + .intro {
               margin-top: 25px;
             }
@@ -196,7 +196,7 @@
     }
     .post-preview__post {
         position: relative;
-        margin: em(10px);
+        margin: rem(10px);
     }
     .post-preview__link {}
     .post-preview__content {
@@ -212,10 +212,10 @@
         .post-preview__title {
             display: inline-block;
             position: relative;
-            font-size: em(22px);
+            font-size: rem(22);
             font-weight: 300;
             text-align: center;
-            margin-bottom: em(5px);
+            margin-bottom: rem(5);
             padding-bottom: 5px;
             @media (min-width: $breakpoint-desktop) {}
             &:after {
@@ -252,7 +252,7 @@
     }
     .post-preview__image {
         display: block;
-        height: em(244.8px);
+        height: rem(244.8);
         width: 100%;
         border-radius: 4px 4px 0 0;
         background-repeat: no-repeat;
