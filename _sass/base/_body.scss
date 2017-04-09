@@ -1,5 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  @include box-sizing;
   font-family: $primary-font-family;
   font-size: $base-font-size;
 }
