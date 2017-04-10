@@ -4,62 +4,75 @@
     @media (min-width: $breakpoint-tablet) {
         flex-direction: row;
     }
+
     .landing__blog-posts {
         background-color: $color-primary;
         color: $color-white;
+
         a {
-          color: $color-white;
+            color: $color-white;
         }
+
         ul {
-          display: flex;
-          flex-wrap: wrap;
-          li {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 1rem;
-            background-color: $color-white;
-            color: $color-black;
-            transition: all 0.3s ease-in-out;
-            margin-right: 1rem;
-            &:last-child {
-              margin-right: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                display: inline-block;
+                margin-top: 1rem;
+                padding: 1rem;
+                background-color: $color-white;
+                color: $color-black;
+                transition: all 0.3s ease-in-out;
+                margin-right: 1rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: $color-black;
+                }
+
+                &:hover {
+                    background-color: $color-black;
+                    color: $color-white;
+
+                    a {
+                        color: $color-white;
+                    }
+                }
             }
-            a {
-              color: $color-black;
-            }
-            &:hover {
-              background-color: $color-black;
-              color: $color-white;
-              a {
-                color: $color-white;
-              }
-            }
-          }
         }
+
         h1 {
-          position: relative;
-          display: inline-block;
-          &:after {
-              content: "";
-              display: block;
-              position: absolute;
-              bottom: 0;
-              height: 3px;
-              width: 100%;
-              background-color: $color-white;
-              @media (min-width: $breakpoint-desktop) {
-                  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-                  // transform: translateX(-100%);
-                  // opacity: 0;
-              }
-          }
+            position: relative;
+            display: inline-block;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                background-color: $color-white;
+                @media (min-width: $breakpoint-desktop) {
+                    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                    // transform: translateX(-100%);
+                    // opacity: 0;
+                }
+            }
         }
     }
+
     .landing__about-me {
         background-color: $color-white;
         color: $color-black;
+
         i {
             color: $color-black;
+
             &.fa-chevron-down {
                 position: absolute;
                 bottom: 50px;
@@ -71,83 +84,114 @@
                 }
             }
         }
-        .intro {
-          .available {
-            color: #fff;
-            background: #2ecc71;
-            padding: 3px;
-            cursor: pointer;
-          }
-          .unavailable {
-            color: #fff;
-            background: #e74c3c;
-            padding: 3px;
-          }
-        }
-        .experience {
-          .company-name {
-            display: inline !important;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 18px;
-          }
-          .role {
-            display: inline !important;
-          }
 
-          .experience__list-item {
-            margin-bottom: 8px;
-          }
+        .intro {
+            .available {
+                color: $color-white;
+                background: #2ecc71;
+                padding: 3px;
+                cursor: pointer;
+
+                a {
+                    color: $color-white;
+                }
+            }
+
+            .unavailable {
+                color: $color-white;
+                background: #e74c3c;
+                padding: 3px;
+            }
         }
-        .projects, .experience {
-          margin-top: 30px;
+
+        .experience {
+            .company-name {
+                display: inline !important;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: rem(18);
+            }
+
+            .role {
+                display: inline !important;
+                font-weight: 200;
+            }
+
+            .experience__list-item {
+                margin-bottom: 8px;
+            }
         }
-        .projects__title, .experience__title {
-          position: relative;
-          padding-bottom: 5px;
-          font-size: rem(22);
-          line-height: 2.1rem;
-          font-weight: 600;
-          display: inline-block;
-          &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            bottom: 0;
-            height: 3px;
-            width: 100%;
-            background-color: $color-primary;
-          }
+
+        .experience,
+        .projects {
+            margin-top: 30px;
         }
-        .projects__list, .experience__list {
-          list-style-type: none;
-          line-height: 1.5em;
-          .project > span, .experience__list-item > span {
+
+        .experience__title,
+        .projects__title {
+            position: relative;
+            padding-bottom: 5px;
+            font-size: rem(22);
+            line-height: 2.1rem;
+            font-weight: 600;
             display: inline-block;
-            width: 100%;
-          }
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                background-color: $color-primary;
+            }
         }
+
+        .experience__list,
+        .projects__list {
+            list-style-type: none;
+            line-height: 1.5em;
+
+            .experience__list-item > span,
+            .project > span {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+
+        .project__title,
+        .project__tech,
+        .project__github {
+            span:first-child {
+                font-size: rem(18);
+                font-weight: 200;
+            }
+        }
+
         .social-links {
             display: flex;
+
             i {
                 color: $color-black;
                 transition: color 0.3s ease-in-out;
+
                 &:hover {
                     color: $color-primary;
                 }
             }
+
             a + a {
                 margin-left: 20px;
             }
             @media (min-width: $breakpoint-tablet) {
-              //position: absolute;
-              bottom: 0;
-              margin-top: 50px;
-              margin-bottom: 50px;
+                //position: absolute;
+                bottom: 0;
+                margin-top: 50px;
+                margin-bottom: 50px;
             }
         }
-
     }
+
     .landing__about-me,
     .landing__blog-posts {
         padding: 25px;
@@ -156,22 +200,26 @@
         @media (min-width: $breakpoint-tablet) {
             width: 50%;
         }
+
         .heading {
             font-weight: 400;
             text-align: center;
         }
+
         .sub-heading {
             margin-top: 20px;
             font-weight: 200;
             text-align: center;
             color: $color-primary;
         }
+
         .intro {
             margin-top: 20px;
             margin-bottom: 0;
             font-size: rem(19);
+
             & + .intro {
-              margin-top: 25px;
+                margin-top: 25px;
             }
             @media (min-width: $breakpoint-desktop) {
                 margin-top: 50px;
@@ -179,6 +227,7 @@
             }
         }
     }
+
     .posts-preview {
         display: flex;
         flex-direction: column;
@@ -186,6 +235,7 @@
             flex-direction: row;
             flex-wrap: wrap;
         }
+
         .post-preview__container {
             border-radius: 4px;
             width: 100%;
@@ -194,11 +244,14 @@
             }
         }
     }
+
     .post-preview__post {
         position: relative;
         margin: rem(10px);
     }
+
     .post-preview__link {}
+
     .post-preview__content {
         background: $color-white;
         border-radius: 0 0 4px 4px;
@@ -209,6 +262,7 @@
         @media (min-width: $breakpoint-desktop) {
             padding: 20px;
         }
+
         .post-preview__title {
             display: inline-block;
             position: relative;
@@ -218,6 +272,7 @@
             margin-bottom: rem(5);
             padding-bottom: 5px;
             @media (min-width: $breakpoint-desktop) {}
+
             &:after {
                 content: "";
                 display: block;
@@ -232,11 +287,13 @@
                     opacity: 0;
                 }
             }
+
             &:hover {
                 @media (min-width: $breakpoint-desktop) {
                     //transform: scale(1.1);
                     transition: transform 0.3s ease-in-out;
                 }
+
                 &:after {
                     @media (min-width: $breakpoint-desktop) {
                         transform: translateX(0);
@@ -245,11 +302,13 @@
                 }
             }
         }
+
         .post-preview__summary {
             font-weight: 200;
             color: lighten($color-black, 45%);
         }
     }
+
     .post-preview__image {
         display: block;
         height: rem(244.8);
@@ -260,14 +319,15 @@
         background-position: center;
     }
 }
-
 @keyframes bounce {
     0% {
         transform: translateY(0%) translateX(-50%);
     }
+
     50% {
         transform: translateY(100%) translateX(-50%);
     }
+
     100% {
         transform: translateY(0%) translateX(-50%);
     }
