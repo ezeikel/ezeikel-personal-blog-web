@@ -36,6 +36,15 @@
             cursor: pointer;
           }
         }
+        &__scroll-down {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 30px;
+          i {
+            color: $color-primary;
+            animation: bounce 1.5s ease-in-out alternate infinite;
+          }
+        }
         &__intro {
           font-size: 18px;
           line-height: 25px;
@@ -91,6 +100,16 @@
               }
             }
           }
+        }
+      }
+    }
+    &__blog-roll {
+      .blog-roll {
+        &__heading {
+          margin-bottom: 30px;
+        }
+        &__post-link {
+          color: $color-white;
         }
       }
     }
