@@ -1,4 +1,15 @@
-// @mixin font-size($sizeValue: 1.6) {
-//   font-size: ($sizeValue * 10) + px;
-//   font-size: $sizeValue + rem;
-// }
+@mixin keyline-top($color, $padding-bottom) {
+  position: relative;
+  display: inline-block;
+  padding-bottom: $padding-bottom;
+  margin-bottom: 3px;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: $color;
+  }
+}

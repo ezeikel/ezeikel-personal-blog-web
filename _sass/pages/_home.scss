@@ -1,15 +1,45 @@
 .p-home {
   .home {
+    li {
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 300;
+    }
+    &__blog-roll, &__about-me {
+      min-height: 100vh;
+      padding-top: 30px;
+    }
     &__blog-roll {
       background-color: $color-primary;
       color: $color-white;
     }
-
     &__about-me {
       background-color: $color-white;
       color: $color-black;
       .about-me {
+        &__heading {
+          margin-bottom: 15px;
+          text-align: center;
+        }
+        &__sub-heading {
+          margin-bottom: 15px;
+          text-align: center;
+          color: $color-primary;
+          font-weight: 300;
+        }
+        &__social-links {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 15px;
+          a + a {
+            margin-left: 15px;
+            cursor: pointer;
+          }
+        }
         &__intro {
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 30px;
           .available {
             color: $color-white;
             background: #2ecc71;
@@ -28,7 +58,39 @@
           }
         }
         &__experience, &__projects {
-          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        &__projects {
+          margin-bottom: 30px;
+          .projects {
+            &__title {
+              margin-bottom: 15px;
+            }
+          }
+          .project {
+            margin-bottom: 15px;
+            &__name {
+              @include keyline-top($color-primary, 6px);
+            }
+          }
+        }
+        &__experience {
+          .experience {
+            &__title {
+              margin-bottom: 15px;
+            }
+            &__previous-companies {
+              .previous-company {
+                margin-bottom: 15px;
+                &__name {
+                  @include keyline-top($color-primary, 6px);
+                }
+              }
+              p {
+                margin-bottom: 0;
+              }
+            }
+          }
         }
       }
     }

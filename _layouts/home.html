@@ -7,39 +7,57 @@
         <section class="home__about-me col-xs-12 col-md-6">
           <h1 class="about-me__heading">Ezeikel Pemberton</h1>
           <h3 class="about-me__sub-heading"><span class="border">Front End Developer</span></h3>
+          <div class="about-me__social-links">
+            <a class="about-me__social-link" href="http://www.github.com/ezeikel"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a class="about-me__social-link" href="https://uk.linkedin.com/in/ezeikel-pemberton-5bb53728"><i class="about-me__social-link fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            <a class="about-me__social-link" href="http://www.twitter.com/ezeikel_"><i class="about-me__social-link fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          </div>
           <div class="about-me__intro">
-            <p class="about-me__intro">Hi, my name is Ezeikel and I am a Front End Developer with a real passion for JavaScript and beautiful UI.</p><p>After a few years of working on a permanent basis in the fast paced and demanding environment of Digital Agencies, I'm now freelancing and currently <span class="available"><a href="mailto:ezeikelpemberton@gmail.com?subject=Work">available</a></span> for new contracts.</p>        
+            <p class="about-me__intro">Hi, my name is Ezeikel and I am a Front End Developer with a real passion for JavaScript and beautiful UI.</p><p>After a few years of working on a permanent basis in the fast paced and demanding environment of Digital Agencies, I'm now freelancing and currently <span class="available"><a href="mailto:ezeikelpemberton@gmail.com?subject=Work">available</a></span> for new contracts.</p>
           </div>
           <div class="about-me__experience">
             <h4 class="experience__title">Experience</h4>
             <ul class="experience__previous-companies">
-              <li class="previous-company">
-                <span class="previous-company__name">Tribal Worldwide</span> | <span class="role">Midweight Front End Developer</span>
+              <li>
+                <ul class="previous-company">
+                    <li class="previous-company__name">Tribal Worldwide</li>
+                    <li class="role">Midweight Front End Developer</li>
+                </ul>
               </li>
-              <li class="previous-company">
-                <span class="previous-company__name">Syzygy</span> | <span class="role">Senior Front End Developer</span>
+              <li>
+                <ul class="previous-company">
+                  <li class="previous-company__name">SYZYGY</li>
+                  <li class="role">Senior Front End Developer</li>
+                </ul>
               </li>
-              <li class="previous-company">
-                <span class="previous-company__name">Cohaesus</span> | <span class="role">Midweight Front End Developer</span>
+              <li>
+                <ul class="previous-company">
+                  <li class="previous-company__name">Cohaesus</li>
+                  <li class="role">Midweight Front End Developer</li>
+                </ul>
               </li>
             </ul>
           </div>
           <div class="about-me__projects">
-            <h4 class="projects__title">Latest Project</h4>
+            <h4 class="projects__title">Projects</h4>
             <ul class="projects__list">
               <li class="project">
-                <span class="project__title"><span>Project Name: </span>EZKL</span>
-                <span class="project__tech"><span>Tech: </span> ReactJS, ES6, Webpack, Flux</span>
-                <span class="project__github"><span>GitHub: </span><a href="http://www.github.com/ezkl">http://www.github.com/ezkl</a></span>
+                <ul class="project__info">
+                  <li class="project__name">TFL Checker</li>
+                  <li class="project__tech">AngularJS,</li>
+                  <li class="project__github-link">Github</li>
+                </ul>
+              </li>
+              <li class="project">
+                <ul class="project__info">
+                  <li class="project__name">Netflix Checker</li>
+                  <li class="project__tech">Angular2,</li>
+                  <li class="project__github-link">Github</li>
+                </ul>
               </li>
             </ul>
           </div>
-          <i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i>
-          <span class="about-me__social-links">
-            <a class="about-me__social-link" href="http://www.github.com/ezeikel"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-            <a class="about-me__social-link" href="https://uk.linkedin.com/in/ezeikel-pemberton-5bb53728"><i class="about-me__social-link fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-            <a class="about-me__social-link" href="http://www.twitter.com/ezeikel_"><i class="about-me__social-link fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-          </span>
+          <!-- <i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i> -->
         </section>
         <section class="home__blog-roll col-xs-12 col-md-6">
             {{ content }}
