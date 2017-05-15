@@ -1,0 +1,36 @@
+.p-home {
+  .home {
+    &__blog-roll {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+
+    &__about-me {
+      background-color: $color-white;
+      color: $color-black;
+      .about-me {
+        &__intro {
+          .available {
+            color: $color-white;
+            background: #2ecc71;
+            padding: 3px;
+            cursor: pointer;
+
+            a {
+              color: $color-white;
+            }
+          }
+
+          .unavailable {
+            color: $color-white;
+            background: #e74c3c;
+            padding: 3px;
+          }
+        }
+        &__experience, &__projects {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

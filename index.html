@@ -1,11 +1,11 @@
 ---
-layout: landing
+layout: home
 ---
-<h1 class="heading">Posts</h1>
-<p>My most recent posts:</p>
-<ul>
+<h1 class="blog-roll__heading">Posts</h1>
+<ul class="blog-roll__posts">
   {% for post in site.posts %}
-  <li>
-    <a class="post-preview__link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+  <li class="blog-roll__post">
+    <a class="blog-roll__post-link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a>
+  </li>
   {% endfor %}
 </ul>

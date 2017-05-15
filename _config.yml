@@ -1,7 +1,7 @@
 # Site settings
-title: Ezeikel Pemberton - Web Developer
+title: Ezeikel Pemberton - Front End Developer.
 email: ezeikelpemberton@gmail.com
-description: The best Web Developer in the world!
+description: Front End Developer based in London. Available for contract. Experience working in Digital Agencies for big brand clients.
 url: "http://ezeikel.co.uk" # the base hostname & protocol for your site
 twitter_username: ezeikel_
 github_username:  ezeikel_
@@ -27,7 +27,7 @@ defaults:
     values:
       author: Ezeikel Pemberton
       layout: "post"
-      category: web
+      category: "front end"
       comments: true
   -
     scope:
