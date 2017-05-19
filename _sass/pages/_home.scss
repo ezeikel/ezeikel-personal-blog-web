@@ -48,6 +48,17 @@
             display: none;
           }
         }
+        &__copy-container {
+          @media (min-width: $bp-xxl) {
+            display: flex;
+            margin-top: 60px;
+            & > div {
+              width: 33.33333%;
+              margin-right: 30px;
+              text-align: center;
+            }
+          }
+        }
         &__intro {
           font-size: 18px;
           line-height: 25px;
