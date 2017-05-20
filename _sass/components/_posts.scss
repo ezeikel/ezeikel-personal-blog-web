@@ -1,23 +1,29 @@
-.post {
-  &.page-wrap {
-    padding: 25px;
-  }
-
-  .post__title {
-    margin-bottom: rem(20px);
-  }
-
-  .post__meta {
-    color: $color-primary;
-  }
-
-  .post__image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    //background: tomato;
-    width: 600px;
-    height: 300px;
-    max-width: 100%;
+.p-post {
+  .post {
+    &__title {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    &__meta {
+      color: $color-primary;
+      @media (min-width: $bp-lg) {
+        margin-bottom: 30px;
+      }
+    }
+    &__img {
+      height: 100%;
+      min-height: 350px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &__content {
+      margin-bottom: 30px;
+      padding-top: 30px;
+      @media (min-width: $bp-lg) {
+        padding-top: 0;
+        margin-bottom: 60px;
+      }
+    }
   }
 }

@@ -1,19 +1,33 @@
 ---
 layout: default
 ---
-
-<div class="page-wrap post">
-  <header class="post__header">
-    <h1 class="post__title">{{ page.title }}</h1>
-    <h4 class="post__subtitle"></h4>
-    <div class="post__image" style="background-image: url('{{ site.url }}/assets/images/{{ page.image }}')"></div>
-    <p class="post__meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} | {{ page.author }}{% endif %}{% if page.meta %} | {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post__content">
-    {{ content }}
-  </article>
-  <div class="post__comments">
-    {% include disqus.html disqus_identifier=page.disqus_indentifier %}
+<div class="p-post container-fluid">
+  <div class="post">
+    <div class="row">
+      <div class="col-sm-12">
+        <header class="post__header">
+          <h1 class="post__title">{{ page.title }}</h1>
+          <p class="post__meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} | {{ page.author }}{% endif %}{% if page.meta %} | {{ page.meta }}{% endif %}</p>
+        </header>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom:90px;">
+      <div class="col-sm-12 col-lg-6">
+        <!-- <div class="post__img" style="background-image: url('{{ site.url }}/assets/images/{{ page.image }}')"></div> -->
+        <div class="post__img" style="background-image: url('https://placeholdit.co//i/350x350?')"></div>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <article class="post__content">
+          {{ content }}
+        </article>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-">
+        <div class="post__comments">
+          {% include disqus.html disqus_identifier=page.disqus_indentifier %}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
