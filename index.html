@@ -2,12 +2,14 @@
 layout: home
 ---
 <h1 class="blog-roll__heading">Posts</h1>
-<ul class="blog-roll__posts">
-  {% for post in site.posts %}
-  <li class="blog-roll__post">
-    <span class="post__date"> {{ post.date | date: '%B %d, %Y' }} </span>
-    <h2 class="post__title"><a class="post__link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a></h2>
-    <span class="post__meta"> {{ post.content | truncatewords: 30 | strip_html }}</span>
-  </li>
-  {% endfor %}
-</ul>
+<div class="blog-roll__container">
+  <ul class="blog-roll__posts">
+    {% for post in site.posts %}
+    <li class="blog-roll__post">
+      <span class="post__date"> {{ post.date | date: '%B %d, %Y' }} </span>
+      <h2 class="post__title"><a class="post__link" href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a></h2>
+      <span class="post__meta"> {{ post.content | truncatewords: 30 | strip_html }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
