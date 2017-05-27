@@ -27,6 +27,9 @@
           display: flex;
           justify-content: center;
           margin-bottom: 15px;
+          @media (min-width: $bp-md) {
+            margin-bottom: 60px;
+          }
           a + a {
             margin-left: 15px;
             cursor: pointer;
