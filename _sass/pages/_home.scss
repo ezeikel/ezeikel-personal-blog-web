@@ -27,7 +27,8 @@
           text-align: center;
           margin-bottom: 15px;
           ul {
-            display: flex;
+            display: inline-flex;
+            width: 150px;
             flex-direction: column;
             position: relative;
             height: 25px;
