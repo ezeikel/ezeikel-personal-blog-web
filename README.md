@@ -1,7 +1,5 @@
 # Personal Blog using Static Site Generator - Jekyll
 
-## Overview
----
 My personal _Jekyll_ powered Blog covering all things **Front End**.
 
 The site is styled using `sass` with a `BEM` approach to naming conventions. The JavaScript is written in `ES6`, however is **not** currently being transpiled down to `ES5` using a tool like `Babel` so browser support may be a bit flaky.
