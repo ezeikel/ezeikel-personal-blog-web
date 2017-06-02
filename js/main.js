@@ -10,7 +10,7 @@ window.onload = function() {
         }
         zIndex++;
         skills[i].style.zIndex = zIndex;
-      }, 5000 * i);
+      }, 1000 * i);
     }
   }
 
