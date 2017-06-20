@@ -173,7 +173,7 @@
               width: 100% // TODO: Hack to push title onto its own line. Fix.
             }
             &__title {
-              @include keyline-top($color-white, 5px);
+              @include keyline-top($color-white, 10px, 80px);
               margin-bottom: 15px;
             }
             &__link {
