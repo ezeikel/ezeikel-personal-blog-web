@@ -112,7 +112,7 @@
           .project {
             margin-bottom: 15px;
             &__name {
-              @include keyline-top($color-primary, 6px);
+              @include keyline-top($color-primary, 6px, 100%);
             }
           }
         }
@@ -125,7 +125,7 @@
               .previous-company {
                 margin-bottom: 15px;
                 &__name {
-                  @include keyline-top($color-primary, 6px);
+                  @include keyline-top($color-primary, 6px, 100%);
                 }
               }
               p {
@@ -173,14 +173,30 @@
               width: 100% // TODO: Hack to push title onto its own line. Fix.
             }
             &__title {
-              @include keyline-top($color-white, 10px, 80px);
+              @include keyline-top($color-white, 15px, 80px);
               margin-bottom: 15px;
+              @media (min-width: $bp-lg) {
+                @include keyline-top($color-white, 10px, 80px);
+                margin-bottom: 0;
+                overflow: hidden;
+                &:after {
+                  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+                  transform: translateX(-60vw);
+                  opacity: 0;
+                }
+                &:hover {
+                  &:after {
+                    transform: translateX(0);
+                    opacity: 1;
+                  }
+                }
+              }
             }
             &__link {
               color: $color-white;
             }
             &__meta {
-              display: inline-block;
+              display: block;
               margin-bottom: 30px;
             }
           }
