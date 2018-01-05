@@ -1,4 +1,4 @@
-# Personal Blog using Static Site Generator - Jekyll
+# Personal Blog build with Jekyll
 
 My personal _Jekyll_ powered Blog covering all things **Front End**.
 

@@ -97,6 +97,9 @@
             color: $color-white;
             background: #e74c3c;
             padding: 3px;
+            a {
+              color: $color-white;
+            }
           }
         }
         &__experience, &__projects {
