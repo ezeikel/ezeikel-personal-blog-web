@@ -9,9 +9,9 @@ I have been listening to Podcasts for around two years now. Not only just for Fr
 
 I think the Podcast format is really useful since unlike YouTube for e.g. you don't have to sit still and give it your full attention all the time to consume the content being shared.
 
-I listen to Podcasts mainly on my commutes to work or anywhere really. On the underground when I have no phone signal, but have some Podcast episodes saved to my iPhone. Also, on the treadmill in the gym 💪🏿. You can literally listen anywhere and it doesn't really matter what your doing.
+I listen to Podcasts mainly on my commutes to work but anywhere really. Really comes in handy when I'm on the underground and have no phone signal, but have some Podcast episodes saved to my phone. Another good place to listen is on the treadmill in the gym 💪🏿. You can literally listen anywhere and it doesn't really matter what you're doing.
 
-Below are my top 5 front end development podcasts that I have found useful/informative. Comment below if you know any others that are worth a listen.
+Below are my top 5 front end development podcasts that I have found useful/informative. Drop a comment below if you know any others that are worth a listen.
 
 <br />
 
@@ -41,7 +41,7 @@ Aimed at newbie developers. Although I don't consider myself a newbie as such, I
 
 ## JavaScript Jabber
 
-A really in depth JavaScript podcast that covers every subject you can think of from JS conferances to the latest and greatest JS framework. They even have a 'Pick of the Week' section at the end of each show where each panellist picks a favourite thing share with the rest of the panel and the listeners.
+A really in depth JavaScript podcast that covers every subject you can think of from JS conferences to the latest and greatest JS framework. They even have a 'Pick of the Week' section at the end of each show where each panellist picks a favourite thing share with the rest of the panel and the listeners.
 
 <https://devchat.tv/js-jabber>
 
