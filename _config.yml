@@ -11,7 +11,7 @@ github_username:  ezeikel_
 markdown: kramdown
 permalink: /:title
 excerpt_separator: <!--more-->
-gems:
+plugins:
   #- jekyll-paginate
   #- jekyll-mentions
   #- jemoji

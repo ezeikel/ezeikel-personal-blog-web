@@ -23,12 +23,33 @@
     &__content {
       margin-bottom: 30px;
       padding-top: 30px;
+      p:last-of-type {
+        margin-bottom: 32px;
+      }
       h2 {
         @include keyline-top($color-primary, 15px, 80px);
+        margin-top: 32px;
       }
       a {
         color: $color-primary;
         text-decoration: underline;
+      }
+      ul {
+        margin-top: 8px;
+        margin-bottom: 32px;
+        li {
+          & + li {
+            margin-top: 8px;
+          }
+        }
+      }
+      img {
+        height: 80px;
+        width: 80px;
+        margin-top: 16px;
+        & + img {
+          margin-left: 16px;
+        }
       }
       @media (min-width: $bp-lg) {
         padding-top: 0;

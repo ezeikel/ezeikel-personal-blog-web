@@ -143,8 +143,6 @@
       background-color: $color-primary;
       color: $color-white;
       .blog-roll {
-        &__container {
-        }
         &__heading {
           text-align: center;
           margin-bottom: 30px;
@@ -160,13 +158,9 @@
         }
         &__post {
           @media (min-width: $bp-lg) {
-            flex: 50%;
             padding-right: 30px;
             padding-left: 30px;
 
-          }
-          @media (min-width: $bp-xl) {
-            flex: 33.33333%;
           }
           .post {
             &__date {
