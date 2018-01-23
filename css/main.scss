@@ -1,6 +1,24 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
+:root {
+    // Colors
+    --color-white: #fff;
+    --color-black: #333;
+    --color-primary: #1abc9c;
+
+    // Fonts
+    --primary-font-family: "museo-sans", sans-serif;
+
+    // Font Sizes
+    --browser-context: 16;
+    --base-font-size: rem(16px);
+
+    // Font Colours
+    --primary-text-color: var(--color-black);
+}
+
 @charset "utf-8";
 
 @import "libs/libs-index";

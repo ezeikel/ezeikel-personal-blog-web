@@ -5,19 +5,15 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: $primary-font-family;
+  font-family: var(--primary-font-family);
 }
 
 h1 {
-  // font-size: rem(42);
-  // line-height: rem(38);
   font-size: 42px;
   line-height: 38px;
 }
 
 h3 {
-  // font-size: rem(21);
-  // line-height: rem(25);
   font-size: 21px;
   line-height: 25px;
 }

@@ -3,6 +3,6 @@
 }
 
 body {
-  font-family: $primary-font-family;
-  font-size: $base-font-size;
+  font-family: var(--primary-font-family);
+  font-size: var(--base-font-size);
 }

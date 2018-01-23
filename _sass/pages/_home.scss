@@ -10,8 +10,8 @@
       padding-top: 30px;
     }
     &__about-me {
-      background-color: $color-white;
-      color: $color-black;
+      background-color: var(--color-white);
+      color: var(--color-black);
       .about-me {
         &__heading {
           margin-bottom: 15px;
@@ -20,7 +20,7 @@
         &__sub-heading {
           margin-bottom: 15px;
           text-align: center;
-          color: $color-primary;
+          color: var(--color-primary);
           font-weight: 300;
         }
         &__skills {
@@ -35,8 +35,8 @@
           }
           li {
             position: absolute;
-            background-color: $color-primary;
-            color: $color-white;
+            background-color: var(--color-primary);
+            color: var(--color-white);
             width: 100%;
             &.active {
               background-color: tomato;
@@ -60,7 +60,7 @@
           justify-content: center;
           margin-bottom: 30px;
           i {
-            color: $color-primary;
+            color: var(--color-primary);
             animation: bounce 1.5s ease-in-out alternate infinite;
           }
           @media (min-width: $bp-md) {
@@ -83,22 +83,22 @@
           line-height: 25px;
           margin-bottom: 30px;
           .available {
-            color: $color-white;
+            color: var(--color-white);
             background: #2ecc71;
             padding: 3px;
             cursor: pointer;
 
             a {
-              color: $color-white;
+              color: var(--color-white);
             }
           }
 
           .unavailable {
-            color: $color-white;
+            color: var(--color-white);
             background: #e74c3c;
             padding: 3px;
             a {
-              color: $color-white;
+              color: var(--color-white);
             }
           }
         }
@@ -115,7 +115,7 @@
           .project {
             margin-bottom: 15px;
             &__name {
-              @include keyline-top($color-primary, 6px, 100%);
+              @include keyline-top(var(--color-primary), 6px, 100%);
             }
           }
         }
@@ -128,7 +128,7 @@
               .previous-company {
                 margin-bottom: 15px;
                 &__name {
-                  @include keyline-top($color-primary, 6px, 100%);
+                  @include keyline-top(var(--color-primary), 6px, 100%);
                 }
               }
               p {
@@ -140,8 +140,8 @@
       }
     }
     &__blog-roll {
-      background-color: $color-primary;
-      color: $color-white;
+      background-color: var(--color-primary);
+      color: var(--color-white);
       .blog-roll {
         &__heading {
           text-align: center;
@@ -170,10 +170,10 @@
               width: 100% // TODO: Hack to push title onto its own line. Fix.
             }
             &__title {
-              @include keyline-top($color-white, 15px, 80px);
+              @include keyline-top(var(--color-white), 15px, 80px);
               margin-bottom: 15px;
               @media (min-width: $bp-lg) {
-                @include keyline-top($color-white, 10px, 80px);
+                @include keyline-top(var(--color-white), 10px, 80px);
                 margin-bottom: 0;
                 overflow: hidden;
                 &:after {
@@ -190,7 +190,7 @@
               }
             }
             &__link {
-              color: $color-white;
+              color: var(--color-white);
             }
             &__meta {
               display: block;

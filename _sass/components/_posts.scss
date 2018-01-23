@@ -8,7 +8,7 @@
       margin-bottom: 15px;
     }
     &__meta {
-      color: $color-primary;
+      color: var(--color-primary);
       @media (min-width: $bp-lg) {
         margin-bottom: 30px;
       }
@@ -27,11 +27,11 @@
         margin-bottom: 32px;
       }
       h2 {
-        @include keyline-top($color-primary, 15px, 80px);
+        @include keyline-top(var(--color-primary), 15px, 80px);
         margin-top: 32px;
       }
       a {
-        color: $color-primary;
+        color: var(--color-primary);
         text-decoration: underline;
       }
       ul {
