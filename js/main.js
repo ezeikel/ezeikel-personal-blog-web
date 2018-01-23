@@ -1,6 +1,6 @@
 window.onload = () => {
   const skills = document.querySelectorAll('.about-me__skills li');
-  let index = 0;
+  let zIndex = 0;
 
   const showSkill = () => {
     [...skills].map((skill,i) => {
@@ -10,8 +10,8 @@ window.onload = () => {
           showSkill();
         }
 
-        index++;
-        skill.style.zIndex = index;
+        zIndex++;
+        skill.style.zIndex = zIndex;
       }, 1000 * i)
     });
   };
