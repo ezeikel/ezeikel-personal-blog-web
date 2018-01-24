@@ -46,7 +46,7 @@ Also, with JavaScript frameworks coming in an out of fashion over time, I think 
 ![vuejs-logo](https://vuejs.org/images/logo.png)
 
 ## 2018
-* ~~CSS Grid~~
+* ~~CSS Grid~~ (This site now uses CSS Grid everywhere)
 * Observables
 * Rxjs
 * Generators (ES6)
