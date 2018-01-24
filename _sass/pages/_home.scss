@@ -1,93 +1,84 @@
 .p-home {
   .home {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: $bp-md) {
+      grid-template-columns: 1fr 1fr;
+    }
     li {
-      font-size: 18px;
+      //font-size: 18px;
       line-height: 25px;
       font-weight: 300;
     }
     &__blog-roll, &__about-me {
       min-height: 100vh;
-      padding-top: 30px;
+      padding: var(--spacing-large);
+
     }
     &__about-me {
+      display: grid;
+      grid-gap: var(--spacing-medium);
       background-color: var(--color-white);
       color: var(--color-black);
       .about-me {
         &__heading {
-          margin-bottom: 15px;
           text-align: center;
         }
         &__sub-heading {
-          margin-bottom: 15px;
           text-align: center;
           color: var(--color-primary);
           font-weight: 300;
         }
         &__skills {
+          display: grid;
+          grid-template-columns: 150px;
+          grid-template-rows: 25px;
+          justify-content: center;
           text-align: center;
-          margin-bottom: 15px;
           ul {
-            display: inline-flex;
-            width: 150px;
-            flex-direction: column;
             position: relative;
-            height: 25px;
+            height: 100%;
+            margin-bottom: 0;
           }
           li {
             position: absolute;
             background-color: var(--color-primary);
             color: var(--color-white);
             width: 100%;
-            &.active {
-              background-color: tomato;
-            }
           }
         }
         &__social-links {
           display: flex;
           justify-content: center;
-          margin-bottom: 15px;
-          @media (min-width: $bp-md) {
-            margin-bottom: 60px;
-          }
           a + a {
-            margin-left: 15px;
+            margin-left: var(--spacing-medium);
             cursor: pointer;
           }
         }
         &__scroll-down {
-          display: flex;
+          display: grid;
+          grid-template-rows: 1fr 1fr;
           justify-content: center;
-          margin-bottom: 30px;
           i {
             color: var(--color-primary);
-            animation: bounce 1.5s ease-in-out alternate infinite;
+            animation: bounce 1.5s ease-in-out infinite;
           }
           @media (min-width: $bp-md) {
             display: none;
           }
         }
         &__copy-container {
-          @media (min-width: $bp-xxl) {
-            display: flex;
-            margin-top: 60px;
-            & > div {
-              width: 33.33333%;
-              margin-right: 30px;
-              text-align: center;
-            }
-          }
+          display: grid;
+          grid-gap: var(--spacing-large) 0;
         }
         &__intro {
-          font-size: 18px;
+          //font-size: 18px;
           line-height: 25px;
-          margin-bottom: 30px;
           .available {
             color: var(--color-white);
-            background: #2ecc71;
-            padding: 3px;
+            background: var(--color-available);
+            padding: var(--spacing-tiny);
             cursor: pointer;
-
             a {
               color: var(--color-white);
             }
@@ -95,40 +86,40 @@
 
           .unavailable {
             color: var(--color-white);
-            background: #e74c3c;
-            padding: 3px;
+            background: var(--color-unavailable);
+            padding: var(--spacing-tiny);
             a {
               color: var(--color-white);
             }
           }
         }
-        &__experience, &__projects {
-          margin-bottom: 30px;
-        }
         &__projects {
-          margin-bottom: 30px;
+          display: grid;
+          grid-gap: var(--spacing-medium) 0;
           .projects {
-            &__title {
-              margin-bottom: 15px;
+            &__list {
+              display: grid;
+              grid-gap: var(--spacing-medium) 0;
+              margin-bottom: 0;
             }
           }
           .project {
-            margin-bottom: 15px;
             &__name {
-              @include keyline-top(var(--color-primary), 6px, 100%);
+              @include keyline-top(var(--color-primary), var(--spacing-tiny), 100%);
             }
           }
         }
         &__experience {
+          display: grid;
+          grid-gap: var(--spacing-medium) 0;
           .experience {
-            &__title {
-              margin-bottom: 15px;
-            }
             &__previous-companies {
+              display: grid;
+              grid-gap: var(--spacing-medium);
+              margin-bottom: 0;
               .previous-company {
-                margin-bottom: 15px;
                 &__name {
-                  @include keyline-top(var(--color-primary), 6px, 100%);
+                  @include keyline-top(var(--color-primary), var(--spacing-tiny), 100%);
                 }
               }
               p {
@@ -140,40 +131,32 @@
       }
     }
     &__blog-roll {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      grid-gap: var(--spacing-huge);
       background-color: var(--color-primary);
       color: var(--color-white);
       .blog-roll {
         &__heading {
           text-align: center;
-          margin-bottom: 30px;
-          @media (min-width: $bp-lg) {
-            margin-bottom: 60px;
-          }
         }
         &__posts {
-          @media (min-width: $bp-lg) {
-            display: flex;
-            flex-wrap: wrap;
-          }
+          display: grid;
+          grid-gap: var(--spacing-large);
+          margin-bottom: 0;
         }
         &__post {
-          @media (min-width: $bp-lg) {
-            padding-right: 30px;
-            padding-left: 30px;
-
-          }
+          display: grid;
+          grid-gap: var(--spacing-tiny);
           .post {
             &__date {
               display: inline-block;
               font-size: 16px;
-              margin-bottom: 5px;
-              width: 100% // TODO: Hack to push title onto its own line. Fix.
             }
             &__title {
-              @include keyline-top(var(--color-white), 15px, 80px);
-              margin-bottom: 15px;
+              @include keyline-top(var(--color-white), var(--spacing-medium), 80px);
               @media (min-width: $bp-lg) {
-                @include keyline-top(var(--color-white), 10px, 80px);
+                @include keyline-top(var(--color-white), var(--spacing-small), 80px);
                 margin-bottom: 0;
                 overflow: hidden;
                 &:after {
@@ -194,7 +177,6 @@
             }
             &__meta {
               display: block;
-              margin-bottom: 30px;
             }
           }
         }

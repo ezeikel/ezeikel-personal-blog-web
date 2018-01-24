@@ -3,20 +3,30 @@
 ---
 
 :root {
-    // Colors
+    /*colors*/
     --color-white: #fff;
     --color-black: #333;
     --color-primary: #1abc9c;
+    --color-available: #2ecc7;
+    --color-unavailable: #e74c3c;
 
-    // Fonts
+    /*fonts*/
     --primary-font-family: "museo-sans", sans-serif;
 
-    // Font Sizes
+    /*font sizes*/
     --browser-context: 16;
-    --base-font-size: rem(16px);
+    --base-font-size: 18px;
 
-    // Font Colours
+    /*font colors*/
     --primary-text-color: var(--color-black);
+
+    /*spacing*/
+    --spacing-tiny: 4px;
+    --spacing-small: calc(var(--spacing-tiny) * 2); //8px
+    --spacing-medium: calc(var(--spacing-small) * 2); //16px
+    --spacing-large: calc(var(--spacing-medium) * 2); //32px
+    --spacing-huge: calc(var(--spacing-large) * 2); //64px
+    --spacing-gargantuan: calc(var(--spacing-huge) * 2); //128px
 }
 
 @charset "utf-8";
