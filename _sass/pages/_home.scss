@@ -5,10 +5,6 @@
     @media (min-width: $bp-md) {
       grid-template-columns: 1fr 1fr;
     }
-    li {
-      line-height: 25px;
-      font-weight: 300;
-    }
     &__blog-roll, &__about-me {
       min-height: 100vh;
       padding: var(--spacing-large);
@@ -26,7 +22,7 @@
         &__sub-heading {
           text-align: center;
           color: var(--color-primary);
-          font-weight: 300;
+          font-weight: var(--font-weight);
         }
         &__skills {
           display: grid;
@@ -71,7 +67,6 @@
           grid-gap: var(--spacing-large) 0;
         }
         &__intro {
-          line-height: 25px;
           .available {
             color: var(--color-white);
             background: var(--color-available);

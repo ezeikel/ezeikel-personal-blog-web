@@ -4,5 +4,7 @@
 
 body {
   font-family: var(--primary-font-family);
-  font-size: var(--base-font-size);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
 }
