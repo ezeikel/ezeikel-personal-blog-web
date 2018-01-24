@@ -1,16 +1,20 @@
 .p-post {
+  padding: var(--spacing-medium);
   @media (min-width: $bp-lg) {
     max-width: 740px;
+    margin: 0 auto;
   }
   .post {
-    &__title {
-      margin-top: 30px;
-      margin-bottom: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: var(--spacing-large);
+    &__header {
+      display: grid;
+      grid-gap: var(--spacing-medium);
     }
     &__meta {
       color: var(--color-primary);
       @media (min-width: $bp-lg) {
-        margin-bottom: 30px;
       }
     }
     &__img {
@@ -21,39 +25,32 @@
       background-position: center;
     }
     &__content {
-      margin-bottom: 30px;
-      padding-top: 30px;
-      p:last-of-type {
-        margin-bottom: 32px;
+      display: grid;
+      grid-gap: var(--spacing-large);
+      p {
+        margin-bottom: 0;
       }
       h2 {
-        @include keyline-top(var(--color-primary), 15px, 80px);
-        margin-top: 32px;
+        @include keyline-top(var(--color-primary), var(--spacing-medium), 80px);
       }
       a {
         color: var(--color-primary);
         text-decoration: underline;
       }
       ul {
-        margin-top: 8px;
-        margin-bottom: 32px;
-        li {
-          & + li {
-            margin-top: 8px;
-          }
-        }
+        display: grid;
+        grid-gap: var(--spacing-small);
       }
       img {
         height: 80px;
         width: 80px;
-        margin-top: 16px;
+        margin-bottom: var(--spacing-medium);
         & + img {
-          margin-left: 16px;
+          margin-left: var(--spacing-medium);
         }
       }
       @media (min-width: $bp-lg) {
         padding-top: 0;
-        margin-bottom: 60px;
       }
     }
   }

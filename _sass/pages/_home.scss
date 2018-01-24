@@ -6,7 +6,6 @@
       grid-template-columns: 1fr 1fr;
     }
     li {
-      //font-size: 18px;
       line-height: 25px;
       font-weight: 300;
     }
@@ -72,7 +71,6 @@
           grid-gap: var(--spacing-large) 0;
         }
         &__intro {
-          //font-size: 18px;
           line-height: 25px;
           .available {
             color: var(--color-white);
