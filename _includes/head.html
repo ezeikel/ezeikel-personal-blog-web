@@ -21,13 +21,11 @@
     ga('create', 'UA-60859122-1', 'auto');
     ga('send', 'pageview');
   </script>
+  <script src="https://use.fontawesome.com/1fe550517e.js"></script>
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-
   <link rel="stylesheet" href="{{ "./css/main.css" | prepend: site.baseurl }}"/>
-
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 </head>
