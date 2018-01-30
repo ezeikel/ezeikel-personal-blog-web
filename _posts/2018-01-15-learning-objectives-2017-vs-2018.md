@@ -16,6 +16,7 @@ Improving my vanilla JavaScript and also finally jumping on ES6+ bandwagon was a
 ![angular-logo](https://angular.io/assets/images/logos/angular/angular.svg)
 ![mongodb-logo](https://pbs.twimg.com/profile_images/750403034178478081/EPrK3ci2_400x400.jpg)
 ![es6-logo](https://codereviewvideos.com/blog/wp-content/uploads/2016/04/es6-logo-483x510.png)
+![firebase-logo](https://cdn.worldvectorlogo.com/logos/firebase-1.svg)
 
 ## 2017
 * ~~Promises (ES6)~~
@@ -27,6 +28,7 @@ Improving my vanilla JavaScript and also finally jumping on ES6+ bandwagon was a
 * ~~NodeJS~~
 * ~~ExpressJS~~
 * ~~MongoDB~~
+* ~~Firebase~~
 * ~~Arrow functions (ES6)~~
 * ~~Destructing Arrays/Objects (ES6)~~
 * ~~Default Function Arguments (ES6)~~
@@ -47,6 +49,8 @@ Also, with JavaScript frameworks coming in an out of fashion over time, I think 
 
 ## 2018
 * ~~CSS Grid~~ (This site now uses CSS Grid everywhere)
+* React Native
+* Ionic
 * Observables
 * Rxjs
 * Generators (ES6)
