@@ -51,7 +51,6 @@ Also, with JavaScript frameworks coming in an out of fashion over time, I think 
 * ~~CSS Grid~~ (This site now uses CSS Grid everywhere)
 * React Native
 * Ionic
-* Observables
 * Rxjs
 * Generators (ES6)
 * VueJS
